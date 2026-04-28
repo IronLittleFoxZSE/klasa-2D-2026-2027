@@ -1,43 +1,43 @@
-// ArrayConsoleApplication.cpp 
+ï»¿// ArrayConsoleApplication.cpp 
 
 #include <iostream>
 
 /*
 Zadania:
 
-* Utwórz tablicê zawieraj¹c¹ 5 liczb ca³kowitych podanych przez u¿ytkownika i wypisz wszystkie jej elementy.
-* Wczytaj do tablicy 10 liczb, a nastêpnie wypisz tylko te, które s¹ wiêksze od zera.
-* W tablicy znajduj¹ siê oceny ucznia. Oblicz œredni¹ arytmetyczn¹ ocen.
-* Dana jest tablica 10 liczb. Policz, ile elementów jest parzystych.
-* Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejnoœci.
-* Dana jest tablica liczb ca³kowitych. SprawdŸ, czy w tablicy znajduje siê liczba podana przez u¿ytkownika.
-* W tablicy zapisano wiek 7 osób. Policz, ile osób jest pe³noletnich.
-* Dana jest tablica 5 liczb. Oblicz ró¿nicê miêdzy najwiêkszym a najmniejszym elementem.
+* UtwÃ³rz tablicÄ™ zawierajÄ…cÄ… 5 liczb caÅ‚kowitych podanych przez uÅ¼ytkownika i wypisz wszystkie jej elementy.
+* Wczytaj do tablicy 10 liczb, a nastÄ™pnie wypisz tylko te, ktÃ³re sÄ… wiÄ™ksze od zera.
+* W tablicy znajdujÄ… siÄ™ oceny ucznia. Oblicz Å›redniÄ… arytmetycznÄ… ocen.
+* Dana jest tablica 10 liczb. Policz, ile elementÃ³w jest parzystych.
+* Wczytaj do tablicy 5 liczb i wypisz je w odwrotnej kolejnoÅ›ci.
+* Dana jest tablica liczb caÅ‚kowitych. SprawdÅº, czy w tablicy znajduje siÄ™ liczba podana przez uÅ¼ytkownika.
+* W tablicy zapisano wiek 7 osÃ³b. Policz, ile osÃ³b jest peÅ‚noletnich.
+* Dana jest tablica 5 liczb. Oblicz rÃ³Å¼nicÄ™ miÄ™dzy najwiÄ™kszym a najmniejszym elementem.
 
 */
 
 /*
-DRY - don't repeat yourself - nie powtarzaj siê
-KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
+DRY - don't repeat yourself - nie powtarzaj siÄ™
+KISS - Keept it simple, stupid - trzymaj prostotÄ™ gÅ‚upcze
 YAGNI - you aren't gonna need it - nie potrzebujesz tego
 */
 
-//Napisz program, który wczyta np. 5 liczb 
-//a nastêpnie wyœwietli je w odwrotnej kolejnoœci.
+//Napisz program, ktÃ³ry wczyta np. 5 liczb 
+//a nastÄ™pnie wyÅ›wietli je w odwrotnej kolejnoÅ›ci.
 void task1()
 {
 	/*
 	int number0, number1, number2, number3, number4 ;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> number0;
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> number1;
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> number2;
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> number3;
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> number4;
 
 	std::cout << number4 << "\n";
@@ -50,23 +50,23 @@ void task1()
 	/*
 	int x = 0;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> "number" + x;
 	x++;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> "number" + x;
 	x++;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> "number" + x;
 	x++;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> "number" + x;
 	x++;
 
-	std::cout << "Podaj liczbê:\n";
+	std::cout << "Podaj liczbÄ™:\n";
 	std::cin >> "number" + x;
 	x++;
 	*/
@@ -74,7 +74,7 @@ void task1()
 	/*
 	for (int i = 0; i < 5; i++)
 	{
-		std::cout << "Podaj liczbê:\n";
+		std::cout << "Podaj liczbÄ™:\n";
 		std::cin >> "number" + i;
 	}
 	*/
@@ -86,7 +86,7 @@ void task1()
 
 	for (int i = 0; i < ARRAY_SIZE; i++)
 	{
-		std::cout << "Podaj liczbê:\n";
+		std::cout << "Podaj liczbÄ™:\n";
 		std::cin >> numbers[i];
 	}
 
@@ -95,7 +95,7 @@ void task1()
 
 }
 
-//Napisz program, który uzupe³ni tablicê liczbami losowymi a nastêpnie znajdzie minimum oraz maksimum.
+//Napisz program, ktÃ³ry uzupeÅ‚ni tablicÄ™ liczbami losowymi a nastÄ™pnie znajdzie minimum oraz maksimum.
 void task2()
 {
 	const short LOWER_RANGE = -40;
@@ -130,10 +130,10 @@ void task2()
 	std::cout << "Min to: " << min << "\n";
 }
 
-//Napisz program obliczaj¹cy œredni¹ arytmetyczn¹ elementów w tablicy liczb ca³kowitych.
+//Napisz program obliczajÄ…cy Å›redniÄ… arytmetycznÄ… elementÃ³w w tablicy liczb caÅ‚kowitych.
 void task3()
 {
-	// <LOWER_RANGE; UPPER_RANGE> przy za³o¿eniu, ¿e LOWER_RANGE <= UPPER_RANGE
+	// <LOWER_RANGE; UPPER_RANGE> przy zaÅ‚oÅ¼eniu, Å¼e LOWER_RANGE <= UPPER_RANGE
 	const unsigned short LOWER_RANGE = 5;
 	const unsigned short UPPER_RANGE = 7;
 
@@ -157,10 +157,10 @@ void task3()
 
 	double avg = sum * 1.0 / ARRAY_SIZE;
 
-	std::cout << "Œrednia wynosi: " << avg << "\n";
+	std::cout << "Åšrednia wynosi: " << avg << "\n";
 }
 
-//Napisz program, który wczyta numer dnia tygodania w nastêpnie wyœwietli nazwê tego dnia lub komunikat b³edu.
+//Napisz program, ktÃ³ry wczyta numer dnia tygodania w nastÄ™pnie wyÅ›wietli nazwÄ™ tego dnia lub komunikat bÅ‚edu.
 void task4()
 {
 	short numberOfWeek = 5;
@@ -170,18 +170,18 @@ void task4()
 	/*
 	std::string dayNames[8];
 	dayNames[0] = "";
-	dayNames[1] = "Poniedzia³ek";
+	dayNames[1] = "PoniedziaÅ‚ek";
 	dayNames[2] = "Wtorek";
 	//..
 	dayNames[7] = "Niedziela";
 	*/
 
-	std::string dayNames[] = {"", "Poniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela" };
+	std::string dayNames[] = {"", "PoniedziaÅ‚ek", "Wtorek", "Åšroda", "Czwartek", "PiÄ…tek", "Sobota", "Niedziela" };
 
 	if (numberOfWeek > 0 && numberOfWeek < 8)
-		std::cout << "Ten dzieñ to " << dayNames[numberOfWeek] << "\n";
+		std::cout << "Ten dzieÅ„ to " << dayNames[numberOfWeek] << "\n";
 	else
-		std::cout << "Niepoprawny dzieñ\n";
+		std::cout << "Niepoprawny dzieÅ„\n";
 }
 
 int main()
