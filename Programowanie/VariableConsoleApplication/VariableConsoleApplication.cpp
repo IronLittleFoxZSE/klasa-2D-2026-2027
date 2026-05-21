@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
-*.
+*. 
 *. Program obliczaj¹cy objêtoœæ sto¿ka.
 *. Program obliczaj¹cy pole ko³a.
 *. Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
@@ -54,12 +54,13 @@ void task2()
 void task3()
 {
 	int sideA, lengthSideB, areaOfRectangle;
+
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task3();
+	task2();
 }
 
 
@@ -102,7 +103,7 @@ Warunki niezbêdne:
 	- podkreœlenie (pod³oga) _
 * pierwszym znakiem nie mo¿e byæ cyfra
 * unikalny w swoim zakresie widocznoœci
-* nie mo¿e to byæ s³owo kluczowe (zarezerwowane) danego jêzyka
+* nie mo¿e to byæ s³owo kluczowe (zarezerwowane) danego jêzyka 
 
 Warunki programistów:
 * nazwa zmiennej powinna oddawaæ charakter przechowywanych danych

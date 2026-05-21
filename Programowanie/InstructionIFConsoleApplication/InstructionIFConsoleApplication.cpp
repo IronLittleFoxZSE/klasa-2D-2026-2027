@@ -79,8 +79,8 @@ void task2()
 
 	if (reminderOfDivision == 0)
 		std::cout << "Podana liczba jest parzysta\n";
-
-	if (reminderOfDivision == 0) // == 1 
+	
+	if (reminderOfDivision != 0) // == 1 
 		std::cout << "Podana liczba jest nieparzysta\n";
 
 	//--------------------------------------------------------
@@ -119,6 +119,7 @@ void task3()
 	else
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 
+
 	//wersja 3
 	if (number >= 1 && number < 10)
 		std::cout << "Liczba jest w zakresie <1;10)\n";
@@ -136,8 +137,6 @@ void task3()
 		std::cout << "Liczba nie jest w zakresie <1;10)\n";
 	else
 		std::cout << "Liczba jest w zakresie <1;10)\n";
-
-
 }
 
 //Napisz program, który wykona dzielenie dwóch liczb

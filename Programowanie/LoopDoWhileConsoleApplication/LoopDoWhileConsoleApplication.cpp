@@ -125,7 +125,33 @@ void task3()
 			}
 		}
 		std::cout << "\n";
-		*/
+	*/
+
+	/*
+		unsigned long long currentNumber = 0;
+
+		currentNumber++;
+		std::cout << currentNumber << ", ";
+		if (upperRange > currentNumber)
+		{
+			currentNumber++;
+			std::cout << currentNumber << ", ";
+			if (upperRange > currentNumber)
+			{
+				currentNumber++;
+				std::cout << currentNumber << ", ";
+				if (upperRange > currentNumber)
+				{
+					currentNumber++;
+					std::cout << currentNumber << ", ";
+					//...
+				}
+			}
+		}
+		std::cout << "\n";
+	
+	
+	*/
 
 	unsigned long long currentNumber = 0;
 	do

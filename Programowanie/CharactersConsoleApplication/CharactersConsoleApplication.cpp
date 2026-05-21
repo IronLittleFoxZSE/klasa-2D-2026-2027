@@ -24,6 +24,8 @@ void task1()
 	std::cout << "Podaj znak\n";
 	std::cin >> characterFromUser;
 
+	//characterFromUser = characterFromUser + 1;
+
 	std::cout << "Poda³eœ znak:" << characterFromUser << "\n";
 }
 
@@ -132,8 +134,8 @@ void task6()
 
 	std::cout << "Wygenerowane has³o " << passowrd << "\n";
 
-	passowrd = "ola";
-	std::cout << passowrd[3000];
+	//passowrd = "ola";
+	//std::cout << passowrd[3000];
 }
 
 //Wczytaj s³owo i wypisz pierwsz¹ oraz ostatni¹ literê.
@@ -193,5 +195,5 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task20();
+	task6();
 }
