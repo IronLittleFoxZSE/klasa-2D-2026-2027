@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.3.11312.210 d18.3
+VisualStudioVersion = 18.3.11312.210
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.vcxproj", "{28D3BFBD-8717-4D18-B519-831235AD06D4}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Array", "02. Array", "{4CD37B6A-068E-42EB-9983-229E494E2FD8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayConsoleApplication", "ArrayConsoleApplication\ArrayConsoleApplication.vcxproj", "{EBC446D6-009E-4A36-B4B5-05A541CA7A1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Function", "05. Function", "{583DDC96-31D6-4967-9BDD-A06A28293B36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunctionConsoleApplication", "FunctionConsoleApplication\FunctionConsoleApplication.vcxproj", "{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +107,14 @@ Global
 		{EBC446D6-009E-4A36-B4B5-05A541CA7A1C}.Release|x64.Build.0 = Release|x64
 		{EBC446D6-009E-4A36-B4B5-05A541CA7A1C}.Release|x86.ActiveCfg = Release|Win32
 		{EBC446D6-009E-4A36-B4B5-05A541CA7A1C}.Release|x86.Build.0 = Release|Win32
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Debug|x64.ActiveCfg = Debug|x64
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Debug|x64.Build.0 = Debug|x64
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Debug|x86.Build.0 = Debug|Win32
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Release|x64.ActiveCfg = Release|x64
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Release|x64.Build.0 = Release|x64
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Release|x86.ActiveCfg = Release|Win32
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +130,7 @@ Global
 		{6E51DF5D-79E6-478F-9F23-E5E81EE1A928} = {403E2A72-6CC1-4D00-97FD-AF3427128612}
 		{4CD37B6A-068E-42EB-9983-229E494E2FD8} = {E2D8B8D6-8053-4C17-9DBF-5F9E00738565}
 		{EBC446D6-009E-4A36-B4B5-05A541CA7A1C} = {4CD37B6A-068E-42EB-9983-229E494E2FD8}
+		{EEF8CB07-BEE4-4303-9EC6-C4D042BA162D} = {583DDC96-31D6-4967-9BDD-A06A28293B36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F12C5057-894F-4250-8489-7E44F110DC64}

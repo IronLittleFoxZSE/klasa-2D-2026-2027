@@ -10,7 +10,7 @@ void task1()
 	std::cout << "Podaj liczbê\n";
 	std::cin >> number;
 
-	int sum = 5;
+	int sum = 0;
 
 	/*
 	if (number != 0)
