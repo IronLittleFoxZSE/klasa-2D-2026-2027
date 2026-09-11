@@ -29,6 +29,7 @@ void showMessage3()
 }
 */
 
+
 void showMessage(std::string message)
 {
 	std::cout << message << "\n";
@@ -76,12 +77,25 @@ void task4()
 //----------------------------------------------------------------------------------------------
 //Napisz funcję uniwersalną, która wyświetli imię oraz informację czy ktoś
 //jest pełnoletni czy nie.
-void task5(std::string n, int a)
+void printAdultStatus(std::string n, int a)
 {
 	if (a >= 18)
 		std::cout << n << " jest pełnoletni\n";
 	else
 		std::cout << n << " nie jest pełnoletni\n";
+}
+
+void task5()
+{
+	std::string name;
+	int age;
+
+	name = "Jan";
+	age = 7;
+	printAdultStatus(name, age);
+
+	name = "Batek";
+	printAdultStatus(name, 19);
 }
 
 int main()
@@ -91,13 +105,5 @@ int main()
 	//task4();
 	//instrukcje
 
-	std::string name;
-	int age;
-
-	name = "Jan";
-	age = 7;
-	task5(name, age);
-
-	name = "Batek";
-	task5(name, 19);
+	task5();
 }
