@@ -98,6 +98,85 @@ void task5()
 	printAdultStatus(name, 19);
 }
 
+//----------------------------------------------------------------------
+
+//przekazanie parametru przez wartość
+void passByValue(int n)
+{
+	std::cout << "Zmienna number w funkcji x: " << n << "\n";
+	n--;
+	std::cout << "Zmienna number w funkcji x: " << n << "\n";
+}
+
+//przekazanie parametru przez referencję
+void passByReference(int& n)
+{
+	std::cout << "Zmienna number w funkcji y: " << n << "\n";
+	n--;
+	std::cout << "Zmienna number w funkcji y: " << n << "\n";
+}
+
+void task6()
+{
+	int number = 7;
+
+	std::cout << "Zmienna number w funkcji task6: " << number << "\n";
+	passByValue(number);
+	std::cout << "Zmienna number w funkcji task6: " << number << "\n";
+
+	number = 8;
+	std::cout << "Zmienna number w funkcji task6: " << number << "\n";
+	passByReference(number);
+	std::cout << "Zmienna number w funkcji task6: " << number << "\n";
+
+}
+
+//----------------------------------
+
+void AddTwoNumbers(int firstNumber, int secondNumber, int& result)
+{
+	//int result;
+	result = firstNumber + secondNumber;
+}
+
+int AddTwoNumbersV2(int firstNumber, int secondNumber)
+{
+	int result;
+	result = firstNumber + secondNumber;
+
+	return result;
+}
+
+
+void task7()
+{
+	int a = 5, b = 8;
+
+	int sum;
+	
+	
+	//sum = a + b;
+	AddTwoNumbers(a, b, sum);
+	sum = AddTwoNumbersV2(a, b);
+
+	std::cout << sum;
+
+	//.....
+
+	int c = 4;
+	int d = 9;
+
+	int secondSum;
+
+	
+	//secondSum = c + d;
+	AddTwoNumbers(c, d, secondSum);
+	secondSum = AddTwoNumbersV2(c, d);
+
+	//...
+
+}
+
 int main()
 {
 	//instrukcje
@@ -105,5 +184,5 @@ int main()
 	//task4();
 	//instrukcje
 
-	task5();
+	task6();
 }
