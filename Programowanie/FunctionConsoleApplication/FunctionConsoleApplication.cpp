@@ -133,13 +133,18 @@ void task6()
 
 //----------------------------------
 
-void AddTwoNumbers(int firstNumber, int secondNumber, int& result)
+//Przeciążenie nazwy funkcji (przeciążenie funkcji) - w tej samej widoczności istnieją dwie 
+// lub więcej funkcji o tej samej nazwie ale różniącej się ilością i/lub typem parametrów.
+//Kompilator na podstawie wywołania funkcji eliminuje definicje. Na końcu eliminacji ma zostać
+// jedna funkcja. Jesli zostanie więcej funkcji lub żadna to kompilator zgłosi bład.
+
+void addTwoNumbers(int firstNumber, int secondNumber, int& result)
 {
 	//int result;
 	result = firstNumber + secondNumber;
 }
 
-int AddTwoNumbersV2(int firstNumber, int secondNumber)
+int addTwoNumbers(int firstNumber, int secondNumber)
 {
 	int result;
 	result = firstNumber + secondNumber;
@@ -156,8 +161,12 @@ void task7()
 	
 	
 	//sum = a + b;
-	AddTwoNumbers(a, b, sum);
-	sum = AddTwoNumbersV2(a, b);
+	addTwoNumbers(a, b, sum);
+	sum = addTwoNumbers(a, b);
+	if (addTwoNumbers(a, b) > 15)
+	{
+
+	}
 
 	std::cout << sum;
 
@@ -170,8 +179,8 @@ void task7()
 
 	
 	//secondSum = c + d;
-	AddTwoNumbers(c, d, secondSum);
-	secondSum = AddTwoNumbersV2(c, d);
+	addTwoNumbers(c, d, secondSum);
+	secondSum = addTwoNumbers(c, d);
 
 	//...
 
