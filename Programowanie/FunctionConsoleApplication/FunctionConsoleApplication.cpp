@@ -186,6 +186,41 @@ void task7()
 
 }
 
+//-------------------------------------------------------------------------------------
+
+//Napisz funkcję która obliczy wartość silni i ją zwróci.
+
+// 5! = 1*2*3*4*5=120
+
+unsigned long long calculateFactorial(short n)
+{
+	unsigned long long factorial = 1;
+
+	for (int i = 2; i <= n; i++)
+	{
+		factorial = factorial * i;
+	}
+
+	return factorial;
+}
+
+//To jest funkcja rekurencyjna
+//Funkcja rekurencyjna - funkcja która w swoim ciele wywołuje kolejną swoją instancję
+unsigned long long calculateFactorialV2(short n)
+{
+	if (n == 1)
+		return 1;
+	else
+		return calculateFactorialV2(n - 1) * n;
+}
+
+void task8()
+{
+	unsigned long long f;
+	f = calculateFactorialV2(5);
+	std::cout << "5! = " << f << "\n";
+}
+
 int main()
 {
 	//instrukcje
@@ -193,5 +228,5 @@ int main()
 	//task4();
 	//instrukcje
 
-	task6();
+	task8();
 }
