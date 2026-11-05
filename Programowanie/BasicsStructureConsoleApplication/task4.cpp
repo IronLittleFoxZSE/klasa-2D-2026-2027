@@ -33,6 +33,12 @@ bool withdrawalFromAccount(BankAccount& account, double amount)
 	return false;
 }
 
+void transferBetweenAccounts(BankAccount& sourceAccount, BankAccount& targetAccount, double amount)
+{
+	if (withdrawalFromAccount(sourceAccount, amount))
+		depositToAccount(targetAccount, amount);
+}
+
 void task4()
 {
 	BankAccount firstAccount;
@@ -54,5 +60,7 @@ void task4()
 	secondAccount.currency = "zł";
 
 	accountInformation(secondAccount);
+
+	transferBetweenAccounts(firstAccount, secondAccount, 8100);
 
 }
